@@ -1,52 +1,64 @@
 #include <stdlib.h>
 
-#nclude <stdlib.h>
+#include <stdio.h>
 
-#include <time.h>
-
-/* more headers goes there */
+#include <string.h>
 
 
 
-/* betty style doc for function main goes there */
+/**
 
-int main(void)
-	
-{
-	
-		int n;
-		
-		
-		
-			srand(time(0));
-			
-				n = rand() - RAND_MAX / 2;
-				
-					/* your code goes there */
-				
-					return (0);
-					include <time.h>
+ * main – print if the number is positive, zero, or negative 
 
-/* more headers goes there */
+* 
 
+ * Description: using the main function 
 
+ * this program prints “programming is positive, zero, or negative” 
 
-/* betty style doc for function main goes there */
+* Return: 0
+
+*/
 
 int main(void)
 
 {
 
-		int n;
+int n;
 
 
 
-			srand(time(0));
+srand(time(0));
 
-				n = rand() - RAND_MAX / 2;
+n = rand() - RAND_MAX / 2;
 
-					/* your code goes there */
+/* your code goes there */
 
-					return (0);
+if(n > 0)
+
+{
+
+	printf("%i is positive\n", n);
 
 }
+
+else if(n == 0)
+
+{
+
+	printf("%i is zero\n", n);
+
+}
+
+else if(n < 0)
+
+{
+
+	printf("%i is negative\n", n);
+
+}
+
+return(0);
+
+}
+
